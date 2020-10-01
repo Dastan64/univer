@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Система "Универ"</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <span>әл-Фараби атындағы Қазақ ұлттық университеті</span><a href="#">
+                <div class="header__img-container">
+                    <a href="../kaz-ver/kazakh.html"><img src="./images/Kazakhstan.png" alt="казахский"></a>
+                    <a href="../index.html"><img src="./images/Russia.png" alt="русский"></a>
+                    <a href="../eng-ver/english.html"><img src="./images/United-States.png" alt="английский"></a>
+                </div>
+    </div>
+    </header>
+    <main class='main'>
+        <div class="main__container_white">
+            <div class="main__univer-caption"><span><b>Univer 2.0</b></span></div> <!--надпись "Univer 2.0"-->
+            <div class="main__auth-caption"><span>Авторизациялану</span></div>
+            <div class="main__authorisation-container">
+                <div class="main__form-container">
+                    <div class="instruction-caption"><span>Логин мен пароліңізді енгізіңіз</span></div>
+                    <form class="user-form" method="post">
+                        <label for="name">Логин</label>
+                        <input onkeydown="changeFont()" type="text" id="name" name="user_name">
+                        <label for="password" class='label-password'>Пароль</label>
+                        <input type="password" id="password" name="user_password">
+                        <button class="form-button">Жүйеге кiру</button>
+                    </form>
+                </div>
+                <div class="main__info-container">
+                    <b><p class="greeting-phrase">Құрметті «UNIVER» жүйесінің қолданушысы!</p></b>
+                    <b><p class="question-1">Жүйеге кіру үшін логин мен парольды қайдан алу керек?</p></b>
+                    <ol class="list-1">
+                        <li>Егер Сіз студент болсаңыз, логин мен парольді эдвайзеріңізден алыңыз.</li>
+                        <li>Егер Сіз оқытушы болсаңыз, логин мен парольді Тіркеу кеңсесінен алыңыз.</li>
+                        <li>Егер Сіз студенттің ата-анасы болсаңыз, логин мен пароль алу үшін балаңыздың эдвайзеріне жеке жолығуыңыз керек.</li>
+                    </ol>
+                    <b><p class="question-2">Логин немесе пароліңізді ұмытып қалсаңыз:</p></b>
+                    <ol class="list-2">
+                        <li>Егер Сіз студенттің ата-анасы болсаңыз, логин мен пароль алу үшін балаңыздың эдвайзеріне жеке жолығуыңыз керек. Эдвайзер Сізге жаңа пароль береді</li>
+                        <li>ер Сіз оқытушы болсаңыз (эдвайзер және кафедра меңгерушісі), Тіркеу-кеңсесіне хабарласыңыз. Тіркеу кеңсесі парольды ауыстырып, Сізге жаңа пароль береді.</li>
+                        <li>Тіркеу кеңсесінің және университет бөлімдерінің қызметкерлері АТД бағдарламаларды қолдау бөліміне хабарласуы тиіс. Жеке куәлігіңізді көрсетсеңіз, жаңа пароль беріледі.</li>
+                    </ol>
+                    <b><p class="warning">Жаңа пароль алғаннан соң оны міндетті түрде ауыстыруыңыз қажет!</p></b>
+                </div>
+            </div>
+            <hr class="split-line">
+            <div class="main__credits">
+                <div class="main__credits-container">
+                    <a class="uni-site" href="https://www.kaznu.kz/">ҚазҰУ сайты</a>
+                    <span>Copyright © 2003-2020 әл-Фараби атындағы Қазақ ұлттық университеті Ақпараттық технологиялар және инновациялық даму институты 
+                    </span>
+                    <span>IP: 5.76.123.200</span>
+                </div>
+            </div>
+            </div>
+    </main>
+    <script>
+        let changeFont = () => {
+            let elements = document.getElementsByTagName('input');
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.fontFamily = "Open Sans";
+            }
+        } 
+        window.onload = changeFont();
+    </script>
+</body>
+</html>

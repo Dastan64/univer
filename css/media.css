@@ -1,0 +1,11 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .univer-colored-layer {
+        width: 80%;
+    }
+    .univer-top-bar {
+        margin-top: 70px;
+    }
+    .switch-container, .language-panel {
+        top: 20px;
+    }
+}
