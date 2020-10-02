@@ -6,6 +6,13 @@
         margin-top: 70px;
     }
     .switch-container, .language-panel {
+        position: absolute;
         top: 20px;
+    }
+    .switch-container {
+        right: 30px;
+    }
+    .language-panel {
+        left: 20px;
     }
 }
