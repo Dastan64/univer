@@ -4,6 +4,9 @@ let popup = document.querySelector('.univer-popup');
 let popupColoredLayer = document.querySelector('.univer-colored-layer');
 let closeButton = document.querySelector('.univer-close-popup');
 let switches = document.querySelectorAll('.switch-container');
+let loginInput = document.getElementById('login');
+let passwordInput = document.getElementById('password');
+let form = document.querySelector('.univer-form');
 
 helpBtn.addEventListener('click', showPopUpWindow);
 
@@ -52,3 +55,7 @@ for (let i=0; i < switches.length; i++) {
         }
     })
 }
+
+form.addEventListener('submit', function() {
+    alert(`Ваш логин: ${loginInput.value}. Пароль: ${passwordInput.value}. Эти данные никуда не отправляются.`)
+})
