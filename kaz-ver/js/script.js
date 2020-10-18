@@ -8,6 +8,10 @@ let loginInput = document.getElementById('login');
 let passwordInput = document.getElementById('password');
 let form = document.querySelector('.univer-form');
 
+document.addEventListener("DOMContentLoaded", function() {
+    loginInput.focus();
+});
+
 helpBtn.addEventListener('click', showPopUpWindow);
 
 function showPopUpWindow(e) { //pop-up окно об информации для студентов и преподавателей
@@ -36,21 +40,19 @@ for (let i=0; i < switches.length; i++) {
         if (this.classList.contains('active')) {
             this.classList.remove('active');
             this.querySelector('input[type="checkbox"]').checked = false;
-            document.body.style.backgroundColor = lightColor;
-            loginBtn.style.backgroundColor = "#FCE38A";
-            loginBtn.style.borderColor = "#FCE38A";
-            helpBtn.style.borderColor = "#F38181";
-            helpBtn.style.backgroundColor = "#F38181";
+            loginInput.focus();
+            document.body.classList.toggle('body-light');
+            loginBtn.classList.toggle('login-btn-lightMode');
+            helpBtn.classList.toggle('help-btn-lightMode');
             popupColoredLayer.style.backgroundColor = lightColor;
         }
         else {
             this.classList.add('active');
             this.querySelector('input[type="checkbox"]').checked = true;
-            document.body.style.backgroundColor = darkColor;
-            loginBtn.style.backgroundColor = "#fecc50";
-            loginBtn.style.borderColor = "#fecc50";
-            helpBtn.style.borderColor = "#010b8b";
-            helpBtn.style.backgroundColor = "#010b8b";
+            loginInput.focus();
+            document.body.classList.toggle('body-light');
+            loginBtn.classList.toggle('login-btn-lightMode');
+            helpBtn.classList.toggle('help-btn-lightMode');
             popupColoredLayer.style.backgroundColor = darkColor;
         }
     })
