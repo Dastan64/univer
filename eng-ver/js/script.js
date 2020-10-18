@@ -33,7 +33,7 @@ window.onclick = function(event) { //скрытие pop-up окна при на�
 }        
 
 let darkColor = "#1e0521";
-let lightColor = "#66a5ad";
+let lightColor = "#678fc2";
 
 for (let i=0; i < switches.length; i++) {
     switches[i].addEventListener('click', function() {
