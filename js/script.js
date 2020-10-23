@@ -8,6 +8,9 @@ let loginInput = document.getElementById('login');
 let passwordInput = document.getElementById('password');
 let form = document.querySelector('.univer-form');
 
+window.addEventListener('load', function() {
+    document.querySelector('.loader-container').style.display = 'none';
+})
 helpBtn.addEventListener('click', showPopUpWindow);
 
 function showPopUpWindow(e) { //pop-up окно об информации для студентов и преподавателей
